@@ -77,7 +77,7 @@ app.get('/beers', (req, res) => {
       .then(res => res.json())
       .then(beers => res.send(beers))
       .catch(err => {
-        throw new Error(err)
+        console.log(err);
       });
 });
 
